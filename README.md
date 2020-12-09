@@ -1,5 +1,6 @@
-README:
+
 Folders:
+
 The /data folder contains a set of netcdf4 files, which can be read using the NetCDF library for Python. Each file corresponds to a single variable, measured over the TAO array. 
 
 /data/sst_anom contains a set of netcdf4 files, each corresponding to the temperature anomaly for a single station. These files are used to calculate ONI for the NINO 3.4 region.
