@@ -6,7 +6,7 @@ The /data folder contains a set of netcdf4 files, which can be read using the Ne
 
 
 ipynb files: 
-Ocean_Prophet.ipynb is the most recent model, and implements the Prophet time-series model to predict ONI one year in advance using a time-lagged ONI compared to ocean properties.
+Ocean_Prophet.ipynb is the most recent model, and implements the Prophet time-series model to predict ONI one year in advance using a time-lagged ONI compared to ocean properties. The trained model is stored in the variable 'p'.
 
 
-Lin_reg_buoy, Ocean_Avg, and Ocean_ARIMA all attempt to do similar predictions using lagged ONI, using respectively linear regression on buoy properties, linear regression on the averaged ocean, and ARIMA regression on buoys over time. Lin_reg_buoy and Ocean_Avg use a randomized train_test_split instead of an initial training period followed by 
+Lin_reg_buoy, Ocean_Avg, and Ocean_ARIMA all attempt to do similar predictions using lagged ONI, using respectively linear regression on buoy properties, linear regression on the averaged ocean, and ARIMA regression on buoys over time. Lin_reg_buoy and Ocean_Avg use a randomized train_test_split instead of an initial training period chronologically followed by a training set, and so are effectively trained on test data. This error was corrected in later models. 
